@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.json",  // Extends the main tsconfig if necessary
+    "compilerOptions": {
+      "outDir": "./dist",   // Specifies the output directory for compiled files
+      "module": "commonjs", // CommonJS module system for Node.js
+      "target": "ES6"       // Target modern JavaScript (ES6 or above)
+    },
+    "include": [
+      "src/**/*.ts",   // Include TypeScript files in the src folder for Node.js
+      "src/**/*.tsx"   // If applicable, include any TypeScript React files
+    ],
+    "exclude": [
+      "node_modules",  // Exclude dependencies
+      "dist"           // Exclude the output folder to avoid recompiling output
+    ]
+  }
+  

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",  // Extends the main tsconfig if you have one
+  "compilerOptions": {
+    "outDir": "./dist"  // Directory for compiled files
+  },
+  "include": [
+    "src/**/*.ts",   // Include all TypeScript files in the src folder
+    "src/**/*.tsx"   // Include all TypeScript React files
+  ],
+  "exclude": [
+    "node_modules",  // Exclude dependencies
+    "dist"           // Exclude the output directory
+  ]
+}
